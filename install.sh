@@ -7,4 +7,8 @@ sudo apt install libcanberra-gtk-module libcanberra-gtk3-module gconf2 gconf-ser
 sudo apt install libssl-dev -y
 sudo apt install libsodium-dev -y
 
-wget -N --no-check-certificate  integem_creator.deb
+wget -N --no-check-certificate https://git.io/Je6aV -O iCreator.deb
+
+sudo dpkg -i iCreator.deb
+sudo apt install --fix-broken
+sudo dpkg -i iCreator.deb
